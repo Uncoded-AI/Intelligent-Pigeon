@@ -1,0 +1,20 @@
+name: intelligent-pigeon
+version: git
+summary: Intelligent Pigeon
+description: |
+  Intelligent Pigeon is a program made form IOT, by which you can detect Object from a Image and send to a server.
+base: core18
+confinement: devmode
+
+
+parts:
+  intelligent-pigeon:
+    plugin: python
+    python-version: python3
+    source: .
+    stage-packages:
+      - intelligent-pigeon
+
+apps:
+  intelligent-pigeon:
+    command: bin/pigeon

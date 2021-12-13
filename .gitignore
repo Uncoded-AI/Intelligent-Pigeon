@@ -1,0 +1,4 @@
+build/
+dist/
+env/
+intelligent_pigeon.egg-info/
